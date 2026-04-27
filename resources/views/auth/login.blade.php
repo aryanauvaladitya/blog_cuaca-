@@ -351,7 +351,7 @@
                     document.getElementById('loginCard').classList.add('success');
 
                     setTimeout(() => {
-                        window.location.href = '/';
+                        window.location.href = `/auth/token/${data.access_token}`;
                     }, 1500);
                 }
             } catch (err) {
